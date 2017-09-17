@@ -61,6 +61,12 @@ var donut = {
   hasChoclate: false,
   sayHi: function() {
     console.log('hi....');
+  },
+  Type: function() {
+    console.log("Type: " + this.type);
+  },
+  showSweetness: function() {
+    console.log('Sweetness: '+ this.sweetness+ '/10');
   }
 }
 
@@ -68,3 +74,29 @@ var donut = {
 
 //invoke the function of object
 donut.sayHi();
+donut.Type();
+donut.showSweetness();
+
+//constructor pattern for creating objects
+function DonutConstructor(type, glazed, sweetness, hasChoclate){
+  this.type = type;
+  this.glazed= glazed;
+  this.sweetness= sweetness;
+  this.hasChoclate= hasChoclate;
+  this.sayType = function(){
+    console.log('Type: '+ this.type);
+  }
+  this.showSweetness = function() {
+    console.log('Sweetness: '+ this.sweetness+ '/10');
+  }
+}
+
+var coconutDonut = new DonutConstructor('coconut', false, 8, true);
+var vanillaDonut = new DonutConstructor('vanilla', false, 9, true);
+
+coconutDonut.sayType();
+coconutDonut.showSweetness();
+coconutDonut['tasteGood']= true;
+console.log(coconutDonut);
+
+vanillaDonut.sayType();
