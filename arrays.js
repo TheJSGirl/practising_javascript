@@ -49,3 +49,9 @@ console.log(slicedArray);
 
 var slicedArray = concattedArray.slice(0, 5); //starts from zero index and stop slicing on 5th index
 console.log(slicedArray); //1,2,3,4,5
+
+//joined array
+var joinedArray = myNamesArray.join('--'); //whatever we put in join method is it will insert in joines of array
+console.log(joinedArray);
+var joinedArray = myNamesArray.join('***'); 
+console.log(joinedArray);
