@@ -100,3 +100,8 @@ coconutDonut['tasteGood']= true;
 console.log(coconutDonut);
 
 vanillaDonut.sayType();
+
+
+var myDonuts = [coconutDonut, vanillaDonut];
+myDonuts.pop(); //vanillaDonut is pop out
+console.log(myDonuts);

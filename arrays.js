@@ -19,7 +19,7 @@ var myNamesArray = new Array();
  newMyArray.push('anshika');
  newMyArray.push(100);
  console.log(newMyArray);
- newMyArray.pop(); //it deletes the last element of an array
+ newMyArray.pop(); //it deletes the last element of an array and transform the original array
  console.log(newMyArray);
  console.log(newMyArray[4]); //acessing the fourth element of an array
  console.log(newMyArray[4][0]);//acessing the zeroth index of 4th element
@@ -45,7 +45,8 @@ var myNamesArray = new Array();
 
 //sliced method use to slice the array from first given index to second given index and it returns the subarray of old array
 var slicedArray = concattedArray.slice(5); //after 5th index it provides subarray
-console.log(slicedArray);
+// var lengthOfArray = concattedArray.length -1;
+// console.log(slicedArray[0] = 'pinki');
 
 var slicedArray = concattedArray.slice(0, 5); //starts from zero index and stop slicing on 5th index
 console.log(slicedArray); //1,2,3,4,5
